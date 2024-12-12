@@ -28,7 +28,7 @@ dotenv: Manage environment variables (e.g., database URLs).
 Nodemon restarts the server automatically when we save the changes: npm install -D nodemon
 
 
-
+"proxy": "http://localhost:5001", removed from package.json above scripts
 
 
 <section className="about" id="about">
