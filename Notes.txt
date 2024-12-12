@@ -1,0 +1,116 @@
+To initialize git, starting the version control for the project: git init
+
+Creating the React App: npx create-react-app client
+
+Navigating into the React App Folder: cd client
+
+Starting the app on local host: Get to client and then start: npm start
+Be in the server directory and run node server.js to run the backend
+
+Moving back to the folder: cd ..
+
+Setting up the backend(Express): mk dir server
+cd server
+
+Initializing the Node.js project, it creates the package.json file to manage the backend dependencies: npm init -y
+
+Installing Express.js and other essential dependencies: npm install express cors body-parser dotenv
+
+What these do:
+
+express: Framework to handle HTTP requests.
+cors: Enable cross-origin requests (frontend to backend communication).
+body-parser: Parse incoming request bodies.
+dotenv: Manage environment variables (e.g., database URLs).
+
+
+
+Nodemon restarts the server automatically when we save the changes: npm install -D nodemon
+
+
+
+
+
+<section className="about" id="about">
+<h2>About Us</h2>
+        <p>We are a professional cleaning service offering top-notch cleaning solutions for homes and offices.</p>
+      </section>
+
+      <section className="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Home Cleaning</li>
+          <li>Office Cleaning</li>
+          <li>Carpet Cleaning</li>
+          <li>Window Cleaning</li>
+        </ul>
+      </section>
+
+      <section className="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you need any information, feel free to reach out to us.</p>
+      </section>
+
+      <section className="quote" id="quote">
+        <h2>Get a Quote</h2>
+        <ContactForm />
+      </section>
+
+
+
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+  margin-top: 40px; /* Increased margin to separate from text */
+}
+
+/* Carousel (Track for Carousel Items) */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* This allows for 3 images to be visible */
+}
+
+
+/* Individual Carousel Image */
+.carousel-image {
+  /*flex: 0 0 33.33%; /* Each image takes 1/3rd of the carousel width */
+  /*max-width: 33.33%; /* Ensure image doesn't exceed its container */
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: blur(3px);
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Active (Center) Carousel Image */
+.carousel-image.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+
+.header-description {
+  position: absolute; /* Use absolute positioning to place it in the header */
+  left: 20px; /* Position it to the left side */
+  top: 50%; /* Vertically center the content */
+  transform: translateY(-50%); /* Center it vertically */
+  text-align: left; /* Align text to the left */
+  margin-top: 0; /* Remove the top margin since it's centered */
+  color: #b9c715; /* Adjust color for visibility */
+  padding: 20px; /* Add padding for spacing */
+  z-index: 2; /* Ensure it appears on top */
+}
+
+https://script.google.com/macros/s/AKfycbysDqQs1jRsfRZVw8I0wqnlS2zs5ELX-TfM_JNsfetmWlYRwxiXHMkALmdmJUipzDg/exec
