@@ -438,31 +438,39 @@ body {
 @media (max-width: 600px) {
   .services-wrapper {
     height: auto; /* Adjust height for smaller screens */
-    border-radius: 0; /* Remove border radius for better fit */
+    border-radius: 10px; /* Remove border radius for better fit */
   }
 
   .services img {
-    object-fit: contain; /* Ensure image scales properly */
-    height: auto;
+    height: 100%;
+    max-height: 500px; /* Limit the image height */
+    object-fit: cover; /* Ensure the image scales properly */
+    width: 100%; /* Make sure the image fills the width */
   }
 
   .services-text {
-    top: 50%;
+    top: 40%;
     left: 50%; /* Center text horizontally */
-    transform: translate(-50%, -50%);
-    font-size: 1rem; /* Reduce text size for smaller screens */
+    /*transform: translate(-50%, -50%);*/
+    font-size: 0.5rem; /* Slightly reduce text size for smaller screens */
     text-align: center; /* Align text to the center */
+    width: 70%; /* Ensure text doesn't touch the edges */
+    max-height: 80%; /* Limit the height of the text container */
+    overflow-y: auto; /* Allow scrolling if content overflows */
   }
 
   .services h2 {
-    font-size: 1.8rem; /* Reduce heading size for smaller screens */
+    font-size: 1.6rem; /* Slightly reduce heading size for smaller screens */
+    margin-bottom: 0px; /* Add some space below the heading */
   }
 
   .services ul {
-    font-size: 1rem; /* Adjust list item font size */
-    line-height: 1.4; /* Adjust line height */
+    font-size: 0.5rem; /* Slightly adjust list item font size */
+    line-height: 1.1; /* Adjust line height for compactness */
+    padding-left: 10px; /* Reduce left padding of the list */
   }
 }
+
 
 
 /*Contact Informations */

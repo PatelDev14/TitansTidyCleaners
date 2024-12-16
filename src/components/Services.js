@@ -7,8 +7,6 @@ const Services = () => (
       <div className="services-text">
         <h2>Our Services</h2>
         <ul>
-          <li>Residential Cleaning</li>
-          <li>Commercial Cleaning</li>
           <li>Deep Cleaning</li>
           <li>Pressure Washing</li>
           <li>Move-In/Move-Out Cleaning</li>
