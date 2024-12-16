@@ -114,3 +114,167 @@ Nodemon restarts the server automatically when we save the changes: npm install 
 }
 
 https://script.google.com/macros/s/AKfycbysDqQs1jRsfRZVw8I0wqnlS2zs5ELX-TfM_JNsfetmWlYRwxiXHMkALmdmJUipzDg/exec
+
+
+
+ 
+.quote{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color:#641414; /* Dark text for the header */
+  font-family: 'Georgia', serif;
+  text-shadow: 0 2px 4px rgba(218, 115, 115, 0.8);
+}
+
+.quote form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased spacing for better readability */
+  max-width: 600px; /* Slightly wider for modern displays */
+  margin: 30px auto; /* Added top and bottom margin for spacing */
+  background: linear-gradient(to bottom, #ffe6f7, #dceefc); /* Gradient background with soft pink and blue */
+  padding: 30px; /* Enhanced padding for a spacious feel */
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  border: 1px solid #e9ecef; /* Slight border for structure */
+}
+
+/* Styling for form labels */
+.quote label {
+  font-size: 1.1rem; /* Slightly larger for better visibility */
+  font-weight: bold;
+  color: #1c1c1c; /* Dark color for text */
+  margin-bottom: 5px; /* Added spacing below labels */
+}
+
+/* Input, textarea, and select styles */
+.quote input, .quote textarea, .quote select {
+  padding: 12px; /* Slightly larger padding for comfort */
+  border-radius: 8px; /* Softer, rounded edges */
+  border: 1px solid #f4a261; /* Light coral border */
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  background-color: #f4f1f1; /* Soft background color */
+  transition: all 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect for inputs and selects */
+.quote input:hover, .quote textarea:hover, .quote select:hover {
+  background-color: #e7f4f1; /* Soft green hover effect */
+}
+
+/* Focus effect for inputs and selects */
+.quote input:focus, .quote textarea:focus, .quote select:focus {
+  border-color: #ff6347; /* Tomato red border on focus */
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Red shadow on focus */
+}
+
+/* Button styles */
+.quote button {
+  padding: 15px; /* Larger button for better touch targets */
+  background: linear-gradient(to right, #ff69b4, #ff1493); /* Pink gradient */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold; /* Added emphasis */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the button */
+.quote button:hover {
+  background: linear-gradient(to right, #ff1493, #c71585); /* Darker pink gradient on hover */
+  box-shadow: 0 4px 10px rgba(255, 99, 71, 0.5); /* Subtle shadow on hover */
+}
+
+/* Styling for the cleaning type and services selection */
+.quote #cleaningType, .quote #services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased spacing between options */
+  text-align: left;
+}
+
+/* Label styling for each option in cleaning type and services */
+.quote #cleaningType label, .quote #services label {
+  background-color: #f1f1f1; /* Light gray background */
+  padding: 10px 15px; /* Padding for touch targets */
+  border-radius: 8px;
+  border: 1px solid #b0e0e6; /* Powder blue border */
+  font-size: 1rem;
+  color: #1c1c1c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+/* Hover effect for each option in cleaning type and services */
+.quote #cleaningType label:hover, .quote #services label:hover {
+  background-color: #dcdcdc; /* Slightly darker gray hover effect */
+  border-color: #ff6347; /* Tomato red border on hover */
+}
+
+/* Textarea styling */
+.quote textarea {
+  min-height: 100px; /* Ensure textareas are spacious */
+  resize: vertical; /* Allow resizing only vertically */
+}
+
+
+/* Form Submission Message*/
+
+.confirmation-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  /* Hide the navigation links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust based on your header height */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    z-index: 999; /* Ensure the menu appears above other content */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center; /* Center the text for better alignment */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: #fff; /* White color for hamburger icon */
+    border-radius: 5px;
+  }
+
+  /* Show the nav links when the nav has the 'active' class */
+  .nav.active .nav-links {
+    display: flex;
+  }
+} */

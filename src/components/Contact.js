@@ -7,7 +7,7 @@ const Contact = () => (
         <img src="/contact.jpg" alt="Contact Us" />
         <div className="contact-text-overlay">
           <h2>Contact Us</h2>
-          <p>Email: parthcob42@gmail.com</p>
+          <p>Email: titanstidycleaners@gmail.com</p>
           <p>Phone: +1 905-781-8935</p>
           <div className="social-icons">
             <a href="https://www.facebook.com" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
