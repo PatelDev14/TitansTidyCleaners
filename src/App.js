@@ -36,7 +36,7 @@ function App() {
     };
   
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbzxl4z-K39LzfB-LqUIsYD7vrweVHb0y7Fhlhmjnwk4r-SDsFMZqJXMnUaYKWa6nC4/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbx9YvOE6rB3UBzSX-I2L--uhH-Iir5vBYv8XyKawFhl3CnncxSV3ZkBtrPCvf_q4I8NKw/exec', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
